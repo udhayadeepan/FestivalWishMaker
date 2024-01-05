@@ -9,14 +9,14 @@ function getUrlParameter(name) {
   }
 
   // Get and display the parameters
-  var festiv_name = getUrlParameter('festival');
-  var sender = getUrlParameter('name');
+  var festiv_name = getUrlParameter('festival').replace("_"," ");
+  var sender = getUrlParameter('name').replace("_"," ");
   var image=getUrlParameter('image');
 
   // Display the values (you can use these values as needed)
   //alert('param1: ' + festiv_name + '\nparam2: ' + sender);
 
-  document.getElementById("festival_name").innerHTML+=festiv_name;
+  document.getElementById("festival_name").innerHTML+=festiv_name.replace(">","'");
   if(sender!=null){
     document.getElementById("sender_info").innerText="Heartly wishes by "+sender;
   }
@@ -30,8 +30,9 @@ function getUrlParameter(name) {
 
   document.getElementById("whatsapp").addEventListener('click',function(){
     var name=document.getElementById("user_name").value;
-    festiv_name = encodeURIComponent(festiv_name);
-     name = encodeURIComponent(name);
+    festiv_name = festiv_name.replace(" ","_");
+      festiv_name = festiv_name.replace("'",">");
+     name = name.replace(" ","_")
 
     
     var redirect="https://udhayadeepan.github.io/FestivalWishMaker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;

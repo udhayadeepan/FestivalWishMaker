@@ -49,8 +49,8 @@ const Database = {
        "Saluting the heroes who contributed to the making of our great nation. Jai Hind!"
        ]
      },
-     "Valentine's Day": {
-     "Name": "Valentine's Day",
+     "Valentine Day": {
+     "Name": "Valentine Day",
      "Date": "Feb 14",
      "bg":"valentineDay.jpg",
      "English": [
@@ -86,8 +86,8 @@ const Database = {
        "May the miracle of Easter bring you the promise of eternal life and salvation."
       ]
      },
-     "April Fool's Day": {
-     "Name": "April Fool's Day",
+     "April Fool Day": {
+     "Name": "April Fool Day",
      "Date": "Apr 1",
      "bg":"foolsDay.jpg",
      "English": [
@@ -110,18 +110,7 @@ const Database = {
        "May the spirit of Ramadan illuminate your path and bring joy to your soul."
      ]
      },
-     "Mother's Day": {
-     "Name": "Mother's Day",
-     "Date": "May 12",
-     "bg":"mothersday.jpg",
-     "English": [
-       "Happy Mother's Day to the amazing women who nurture and inspire us!",
-       "Wishing you a day filled with love, appreciation, and heartfelt gratitude.",
-       "May the warmth of your love continue to brighten our lives every day.",
-       "Thank you for your selfless love, sacrifices, and endless support. You are cherished!",
-       "Celebrating the incredible mothers who make the world a better place. Happy Mother's Day!"
-     ],
-     },
+     
      "Eid al-Fitr": {
      "Name": "Eid al-Fitr",
      "Date": "May 20",
@@ -134,18 +123,7 @@ const Database = {
        "Eid Mubarak to you and your loved ones! May this special day bring love and warmth to your home."
        ],
      },
-     "Father's Day": {
-     "Name": "Father's Day",
-     "Date": "Jun 16",
-     "bg":"fathersday.jpg",
-     "English": [
-        "Happy Father's Day to the best dad in the world!",
-        "Dad, your love and guidance mean everything to me. Wishing you a wonderful Father's Day!",
-        "Thank you for being my hero and role model. Happy Father's Day!",
-        "To the man who has always been there for me, today is all about you. Happy Father's Day!",
-        "Dad, you're my first and forever hero. Happy Father's Day!"
-    ],
-     },
+     
      "Ganesh Chaturthi": {
      "Name": "Ganesh Chaturthi",
      "Date": "Sep 7",

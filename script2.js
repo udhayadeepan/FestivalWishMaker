@@ -10,7 +10,7 @@ function getUrlParameter(name) {
 
   // Get and display the parameters
   var festiv_name = getUrlParameter('festival');
-  festiv_name=festiv_name.replace(">","'");
+  festiv_name=festiv_name.replace("@","'");
 festiv_name=festiv_name.replace("_"," ");
   var sender = getUrlParameter('name');
   var image=getUrlParameter('image');
@@ -33,7 +33,7 @@ festiv_name=festiv_name.replace("_"," ");
   document.getElementById("whatsapp").addEventListener('click',function(){
     var name=document.getElementById("user_name").value;
     festiv_name = festiv_name.replace(" ","_");
-      festiv_name = festiv_name.replace("'",">");
+      festiv_name = festiv_name.replace("'","@");
      name = name.replace(" ","_")
 
     

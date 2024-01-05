@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   font-family: cursive;
+    flex-direction: column;
+    
+}
+header{
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+main div{
+    text-align: center;
+    cursor: pointer;
+    transition: scale 500ms ease-in-out;
+}
+main div div{
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    
+    text-align: center;
+    filter: blur(1.5);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-wrap:wrap;
+    color: white;
+    background-color:green;
+    
+}
+main div:hover{
+    scale: 1.05;
+}

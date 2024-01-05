@@ -30,14 +30,13 @@ function getUrlParameter(name) {
 
   document.getElementById("whatsapp").addEventListener('click',function(){
     var name=document.getElementById("user_name").value;
-    festiv_name=festiv_name.replace("'","%27");
-      festiv_name=festiv_name.replace(" ","%20");
-    name=name.replace(" ","%20");
+    festiv_name = festiv_name.replace(/ /g, "%20").replace(/'/g, "%27");
+    name = name.replace(/ /g, "%20");
+
     
     var redirect="https://udhayadeepan.github.io/FestivalWishMaker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;
     var textMsg=name+" sent a special wish for you😍\n click the below link to see the wish \n"+redirect; 
     var link='https://wa.me/?text='+textMsg;
-      link=link.replace(" ","%20");
       console.log(link);
     window.open(link,'_blank');
 

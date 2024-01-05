@@ -30,7 +30,8 @@ function getUrlParameter(name) {
 
   document.getElementById("whatsapp").addEventListener('click',function(){
     var name=document.getElementById("user_name").value;
-    festiv_name=festiv_name.replace("'","%27")
+    festiv_name=festiv_name.replace("'","%27");
+      festiv_name=festiv_name.replace(" ","%20");
     name=name.replace(" ","%20");
     
     var redirect="https://udhayadeepan.github.io/FestivalWishMaker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;

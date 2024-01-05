@@ -9,16 +9,18 @@ function getUrlParameter(name) {
   }
 
   // Get and display the parameters
-  var festiv_name = getUrlParameter('festival').replace("_"," ");
-  var sender = getUrlParameter('name').replace("_"," ");
+  var festiv_name = getUrlParameter('festival');
+  festiv_name=festiv_name.replace(">","'");
+festiv_name=festiv_name.replace("_"," ");
+  var sender = getUrlParameter('name');
   var image=getUrlParameter('image');
 
   // Display the values (you can use these values as needed)
   //alert('param1: ' + festiv_name + '\nparam2: ' + sender);
 
-  document.getElementById("festival_name").innerHTML+=festiv_name.replace(">","'");
+  document.getElementById("festival_name").innerHTML+=festiv_name;
   if(sender!=null){
-    document.getElementById("sender_info").innerText="Heartly wishes by "+sender;
+    document.getElementById("sender_info").innerText="Heartly wishes by "+sender.replace("_"," ");
   }
   if(image!=null){
     document.getElementById("image").style.backgroundImage="url(bg/"+image+")";

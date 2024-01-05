@@ -37,6 +37,7 @@ function getUrlParameter(name) {
     var redirect="https://udhayadeepan.github.io/FestivalWishMaker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;
     var textMsg=name+" sent a special wish for you😍\n click the below link to see the wish \n"+redirect; 
     var link='https://wa.me/?text='+textMsg;
+      link=encodeURIComponent(link);
       console.log(link);
     window.open(link,'_blank');
 

@@ -33,7 +33,7 @@ function getUrlParameter(name) {
     festiv_name=festiv_name.replace("'","%27")
     name=name.replace(" ","%20");
     
-    var redirect="https://udhayadeepan.github.io/Festival-wish-Maker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;
+    var redirect="https://udhayadeepan.github.io/FestivalWishMaker/wishes.html?festival="+festiv_name+";name="+name+";image="+image ;
     var textMsg=name+" sent a special wish for you😍\n click the below link to see the wish \n"+redirect; 
     var link='https://wa.me/?text='+textMsg;
     window.open(link,'_blank');
